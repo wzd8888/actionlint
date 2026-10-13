@@ -2,7 +2,7 @@
 
 # Unreleased
 
-- Install ShellCheck for the `actionlint-shellcheck` pre-commit hook through `github.com/kjanat/shellcheck-rs/go/cmd/shellcheck`, a Go installer that downloads and runs the native rshellcheck release, in place of go-shellcheck, which compiled a WASM build of ShellCheck in every process actionlint spawned. rshellcheck's own diagnostics, such as SC9001 and SC9002, pass through unchanged. (kjanat/actionlint#89)
+- Install ShellCheck for the `actionlint-shellcheck` pre-commit hook through `github.com/kjanat/shellcheck-rs/go/cmd/shellcheck`, a Go installer that downloads and runs the native rshellcheck release, in place of go-shellcheck, which compiled a WASM build of ShellCheck in every process actionlint spawned. With `gh` signed in, the installer verifies the release's build provenance before installing. rshellcheck's own diagnostics, such as SC9001 and SC9002, pass through unchanged. (kjanat/actionlint#89)
 
 - Expand bundled action metadata by 117 action paths, including Bun, uv, pnpm, mise, Nix, Docker Bake, Gradle, cloud deployment, security scanners and release automation. Validate their declared inputs and outputs and recognize retired runtime versions.
 
